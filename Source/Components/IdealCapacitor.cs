@@ -8,9 +8,9 @@ namespace Pamola.Transient
 {
     public class IdealCapacitor : TransientDipole
     {
-        public double Capacitance { get; private set; }
+        public double Capacitance { get; set; }
 
-        public Complex Charge { get; private set; }
+        public Complex Charge { get; set; }
 
         public IdealCapacitor(double capacitance)
         {
@@ -41,8 +41,6 @@ namespace Pamola.Transient
 
             return V - Charge;
         }
-
-        // TODO: Create Abstractions and Components Folders
-        // TODO: Unit test IdealCapacitor
+        
     }
 }
